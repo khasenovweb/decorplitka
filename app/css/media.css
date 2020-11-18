@@ -377,6 +377,9 @@
   .modal__title {
     font-size: 20px;
   }
+  .textpage {
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 740px) {
   .sec6__line {
