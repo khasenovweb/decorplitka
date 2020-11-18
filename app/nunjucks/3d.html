@@ -1,0 +1,62 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+
+<div class="d3">
+    <div class="container">
+        <ul class="bredcrumbs">
+			<li class="breadcrumb-item"><a href="/">Главная</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item"><a href="katalog/">Каталог</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item active">Гидравлические коллекторы</li>
+        </ul>
+        <h1 class="pagetitle">Дизайн-проект в 3D</h1>
+        <div class="textblock">
+            <p>Наша компания предоставляет услугу 3D дизайна вашей будущей ванной комнаты и санузла.</p>
+            <p>Стоимость услуги 1000 рублей, в случае дальнейшего оформления заказа - бесплатно. </p>
+        </div>
+        <div class="d3__steps">
+            <div class="d3__step">
+                <div class="d3__step__number">1</div>
+                <div class="d3__step__title">Выберите понравившуюся плитку и уточните её наличие у менеджера. </div>
+            </div>
+            <div class="d3__step">
+                <div class="d3__step__number">2</div>
+                <div class="d3__step__title">Запишитесь к дизайнеру (услуга предоставляется онлайн, приезжать не обязательно)</div>
+            </div>
+            <div class="d3__step">
+                <div class="d3__step__number">3</div>
+                <div class="d3__step__title">Указажите точные замеры вашего помещения. Согласуйте с дизайнером все детали.</div>
+            </div>
+            <div class="d3__step">
+                <div class="d3__step__number">4</div>
+                <div class="d3__step__title">Оплатите услугу удобным для вас способом.  </div>
+            </div>
+            <div class="d3__step">
+                <div class="d3__step__number">5</div>
+                <div class="d3__step__title">В течение 2-х часов получите на эл. почту проект, раскладку и расчет плитки. </div>
+            </div>
+        </div>
+        <div class="d3__gallery">
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+            <div class="d3__gallery__item" style="background-image: url(../img/item.jpg);" data-fancybox="gallery" data-src="img/item.jpg"></div>
+        </div>
+        <div class="d3__btn__wrapper">
+            <div class="btn d3__btn" data-modal-show="2">Записаться к дизайнеру</div>
+        </div>
+        
+    </div>
+</div>
+
+
+{% endblock %}

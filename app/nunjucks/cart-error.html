@@ -1,0 +1,27 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+
+<div class="alert__page">
+	<div class="container">
+		<ul class="bredcrumbs">
+			<li class="breadcrumb-item"><a href="/">Главная</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item"><a href="katalog/">Каталог</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item active">Гидравлические коллекторы</li>
+		</ul>
+		<div class="alert__page__content">
+			<img src="img/cart-empty.svg" alt="" class="alert__page__icon">
+			<div class="alert__page__title">Корзина пуста</div>
+			<div class="alert__page__desc">Вы еще ничего не выбрали!</div>
+			<a href="/" class="btn alert__page__btn">На главную</a>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

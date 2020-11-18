@@ -1,0 +1,76 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+
+<div class="contacts">
+	<div class="container">
+		<ul class="bredcrumbs">
+			<li class="breadcrumb-item"><a href="/">Главная</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item"><a href="katalog/">Каталог</a></li>
+			<li class="bredcrumbs_separator">»</li>
+			<li class="breadcrumb-item active">Гидравлические коллекторы</li>
+		</ul>
+		<h1 class="pagetitle">Контакты</h1>
+		<div class="contacts__content">
+			<div class="contacts__content__text">
+				<div class="contacts__list">
+					<div class="contact">
+						<div class="contact__icon phone"></div>
+						<div class="contact__title">+7 (495) 021-2172</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon mail"></div>
+						<div class="contact__title">zakaz@decorplitka.ru</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon loc"></div>
+						<div class="contact__title">г. Москва, Колодезный переулок, дом 3. Второй этаж</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon clock"></div>
+						<div class="contact__title">Ежедневно с 10:00 до 20:00</div>
+					</div>
+				</div>
+				<div class="contacts__content__subtitle">Написать нам:</div>
+				<form action="/" class="contacts__content__form">
+					<div class="contacts__content__subtitle__inputgroup">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="E-mail">
+					</div>
+					<textarea name="" id="" cols="30" rows="5" placeholder="Сообщение" class="contacts__content__subtitle__textarea"></textarea>
+					<button class="btn contacts__content__form__btn">Отправить</button>
+				</form>
+			</div>
+			<div class="contacts__content__map" id="contacts__map"></div>
+		</div>
+	</div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    //Яндекс Карта
+    ymaps.ready(init);
+    var myMapAll;
+
+    function init() {
+        myMapAll = new ymaps.Map("contacts__map", {
+            center: [55.798176, 37.697433],
+            zoom: 10,
+        });
+        var myPlacemark_1 = new ymaps.Placemark([55.798176, 37.697433], {
+            balloonContentHeader: "Название объекта",
+            balloonContentBody: "Описание объекта",
+            balloonContentFooter: "",
+            hintContent: "Кликните для более подробной информации",
+        });
+        myMapAll.geoObjects.add(myPlacemark_1);
+    }
+    //END Яндекс Карта
+</script>
+
+
+{% endblock %}

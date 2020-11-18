@@ -1,0 +1,210 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!--====================================== collection__head ============================================-->
+<div class="collection__head">
+	<div class="container">
+		<div class="collection__head__img" style="background-image: url(img/item.jpg);"></div>
+		<div class="collection__head__text">
+			<ul class="bredcrumbs">
+				<li class="breadcrumb-item"><a href="/">Главная</a></li>
+				<li class="bredcrumbs_separator">»</li>
+				<li class="breadcrumb-item"><a href="katalog/">Каталог</a></li>
+				<li class="bredcrumbs_separator">»</li>
+				<li class="breadcrumb-item active">Гидравлические коллекторы</li>
+			</ul>
+			<h1 class="pagetitle">Керамическая плитка Кантри Шик Kerama Marazzi</h1>
+			<ul class="collection__head__list">
+				<li>Коллекция: <span>Кантри Шик</span></li>
+				<li>Фабрика: <span>Kerama Marazzi</span></li>
+				<li>Страна: <span>Россия</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--======================================END collection__head ============================================-->
+
+<!--====================================== collection__items__head ========================================-->
+<div class="collection__items__head">
+	<div class="container">
+		<h2 class="collection__items__head__title">Настенная плитка Кантри Шик</h2>
+		<div class="collection__items__head__line"></div>
+	</div>
+</div>
+<!--======================================END collection__items__head =====================================-->
+<!--====================================== collection__items =====================================-->
+<div class="collection__items">
+	<div class="container">
+		{% for i in range(4, data.numberOfRooms) -%}
+		<!-- collection__item -->
+		<div class="collection__item">
+			<div class="collection__item__img" style="background-image: url(img/item-2.jpg);"></div>
+			<div class="collection__item__text">
+				<div class="collection__item__code">Код: 270958</div>
+				<a href="" class="collection__item__title">7186 Кантри Шик белый 20x50</a>
+				<div class="collection__item__country">
+					<img src="img/russian.jpg" alt="" class="collection__item__country__icon">
+					<div class="collection__item__country__title">Россия</div>
+				</div>
+				<ul class="collection__item__haracter">
+					<li>Размер: <span>20х50 см</span></li>
+					<li>Поверхность: <span>матовая</span> </li>
+					<li>Помещение: <span>для туалета</span></li>
+					<li>Цвет: <span>белый</span> </li>
+				</ul>
+				<div class="collection__item__pricecount">
+					<div class="collection__item__count">
+						<input type="number" value="1" min="1">
+						<div class="collection__item__count__label">кв.м</div>
+					</div>
+					<div class="collection__item__price">976 ₽</div>
+				</div>
+				<button class="collection__item__btn">В корзину</button>
+			</div>
+		</div>
+		<!--END collection__item -->
+		{%- endfor %}
+	</div>
+</div>
+<!--======================================END collection__items =====================================-->
+
+
+<!--====================================== collection__items__head ========================================-->
+<div class="collection__items__head">
+	<div class="container">
+		<h2 class="collection__items__head__title">Напольный керамогранит Кантри Шик</h2>
+		<div class="collection__items__head__line"></div>
+	</div>
+</div>
+<!--======================================END collection__items__head =====================================-->
+<!--====================================== collection__items =====================================-->
+<div class="collection__items">
+	<div class="container">
+		{% for i in range(2, data.numberOfRooms) -%}
+		<!-- collection__item -->
+		<div class="collection__item">
+			<div class="collection__item__img" style="background-image: url(img/item-2.jpg);"></div>
+			<div class="collection__item__text">
+				<div class="collection__item__code">Код: 270958</div>
+				<a href="" class="collection__item__title">7186 Кантри Шик белый 20x50</a>
+				<div class="collection__item__country">
+					<img src="img/russian.jpg" alt="" class="collection__item__country__icon">
+					<div class="collection__item__country__title">Россия</div>
+				</div>
+				<ul class="collection__item__haracter">
+					<li>Размер: <span>20х50 см</span></li>
+					<li>Поверхность: <span>матовая</span> </li>
+					<li>Помещение: <span>для туалета</span></li>
+					<li>Цвет: <span>белый</span> </li>
+				</ul>
+				<div class="collection__item__pricecount">
+					<div class="collection__item__count">
+						<input type="number" value="1" min="1">
+						<div class="collection__item__count__label">кв.м</div>
+					</div>
+					<div class="collection__item__price">976 ₽</div>
+				</div>
+				<button class="collection__item__btn">В корзину</button>
+			</div>
+		</div>
+		<!--END collection__item -->
+		{%- endfor %}
+	</div>
+</div>
+<!--======================================END collection__items =====================================-->
+
+
+<!--====================================== collection__items__head ========================================-->
+<div class="collection__items__head">
+	<div class="container">
+		<h2 class="collection__items__head__title">Декор Кантри Шик</h2>
+		<div class="collection__items__head__line"></div>
+	</div>
+</div>
+<!--======================================END collection__items__head =====================================-->
+<!--====================================== collection__items =====================================-->
+<div class="collection__items">
+	<div class="container">
+		{% for i in range(4, data.numberOfRooms) -%}
+		<!-- collection__item -->
+		<div class="collection__item">
+			<div class="collection__item__img" style="background-image: url(img/item-2.jpg);"></div>
+			<div class="collection__item__text">
+				<div class="collection__item__code">Код: 270958</div>
+				<a href="" class="collection__item__title">7186 Кантри Шик белый 20x50</a>
+				<div class="collection__item__country">
+					<img src="img/russian.jpg" alt="" class="collection__item__country__icon">
+					<div class="collection__item__country__title">Россия</div>
+				</div>
+				<ul class="collection__item__haracter">
+					<li>Размер: <span>20х50 см</span></li>
+					<li>Поверхность: <span>матовая</span> </li>
+					<li>Помещение: <span>для туалета</span></li>
+					<li>Цвет: <span>белый</span> </li>
+				</ul>
+				<div class="collection__item__pricecount">
+					<div class="collection__item__count">
+						<input type="number" value="1" min="1">
+						<div class="collection__item__count__label">кв.м</div>
+					</div>
+					<div class="collection__item__price">976 ₽</div>
+				</div>
+				<button class="collection__item__btn">В корзину</button>
+			</div>
+		</div>
+		<!--END collection__item -->
+		{%- endfor %}
+	</div>
+</div>
+<!--======================================END collection__items =====================================-->
+
+
+
+<!--====================================== collection__items__head ========================================-->
+<div class="collection__items__head">
+	<div class="container">
+		<h2 class="collection__items__head__title">Бордюр Кантри Шик</h2>
+		<div class="collection__items__head__line"></div>
+	</div>
+</div>
+<!--======================================END collection__items__head =====================================-->
+<!--====================================== collection__items =====================================-->
+<div class="collection__items">
+	<div class="container">
+		{% for i in range(6, data.numberOfRooms) -%}
+		<!-- collection__item -->
+		<div class="collection__item">
+			<div class="collection__item__img" style="background-image: url(img/item-2.jpg);"></div>
+			<div class="collection__item__text">
+				<div class="collection__item__code">Код: 270958</div>
+				<a href="" class="collection__item__title">7186 Кантри Шик белый 20x50</a>
+				<div class="collection__item__country">
+					<img src="img/russian.jpg" alt="" class="collection__item__country__icon">
+					<div class="collection__item__country__title">Россия</div>
+				</div>
+				<ul class="collection__item__haracter">
+					<li>Размер: <span>20х50 см</span></li>
+					<li>Поверхность: <span>матовая</span> </li>
+					<li>Помещение: <span>для туалета</span></li>
+					<li>Цвет: <span>белый</span> </li>
+				</ul>
+				<div class="collection__item__pricecount">
+					<div class="collection__item__count">
+						<input type="number" value="1" min="1">
+						<div class="collection__item__count__label">кв.м</div>
+					</div>
+					<div class="collection__item__price">976 ₽</div>
+				</div>
+				<button class="collection__item__btn">В корзину</button>
+			</div>
+		</div>
+		<!--END collection__item -->
+		{%- endfor %}
+	</div>
+</div>
+<!--======================================END collection__items =====================================-->
+
+{% endblock %}
