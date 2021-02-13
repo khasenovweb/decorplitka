@@ -18,7 +18,7 @@
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  border: 10px solid #F3F3F3 !important;
+  border: 10px solid #f3f3f3 !important;
 }
 .sec5__slider button.owl-next {
   position: absolute;
@@ -37,7 +37,7 @@
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  border: 10px solid #F3F3F3 !important;
+  border: 10px solid #f3f3f3 !important;
 }
 .sec5__slider .owl-dots {
   display: -webkit-box;
@@ -60,7 +60,7 @@
   opacity: 0.5;
 }
 .sec5__slider .owl-dots button.owl-dot.active {
-  background-color: #ED6E1E;
+  background-color: #ed6e1e;
   opacity: 1;
 }
 .sec5__slide {
@@ -74,7 +74,7 @@
   padding-bottom: 80px;
 }
 .sec5__slide:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -103,7 +103,7 @@
   padding: 20px 30px;
   display: inline-block;
   text-decoration: none;
-  background-color: #ED6E1E;
+  background-color: #ed6e1e;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -133,7 +133,7 @@
   -webkit-box-flex: 1;
           flex-grow: 1;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   margin: 0 60px;
 }
 .sec6__all {
@@ -153,7 +153,7 @@
 .sec6__all__title {
   font-size: 14px;
   text-transform: uppercase;
-  color: #ED6E1E;
+  color: #ed6e1e;
   font-weight: bold;
   margin-right: 10px;
 }
@@ -182,12 +182,23 @@
   overflow: hidden;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  position: relative;
 }
 .sec7__item:hover {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.03);
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+.sec7__item__sample {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #ed6e1e;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
 }
 .sec7__item__img {
   width: 100%;
@@ -221,7 +232,7 @@
   font-size: 14px;
 }
 .sec7__item__price {
-  color: #ED6E1E;
+  color: #ed6e1e;
   margin-top: 10px;
   font-weight: bold;
 }

@@ -2,6 +2,9 @@
   .container {
     max-width: 1000px;
   }
+  .sec1__socials {
+    display: none;
+  }
   .sec1__contact__title {
     font-size: 12px;
   }

@@ -7,7 +7,21 @@
 <!--====================================== collection__head ============================================-->
 <div class="collection__head">
 	<div class="container">
-		<div class="collection__head__img" style="background-image: url(img/item.jpg);"></div>
+		<!-- collection__head__slider -->
+		<div class="collection__head__slider owl-carousel">
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+			<div data-fancybox href="img/item.jpg" class="collection__head__slider__item" style="background-image: url(img/item.jpg);"></div>
+		</div>
+		<!--END collection__head__slider -->
+		<!-- <div class="collection__head__img" style="background-image: url(img/item.jpg);"></div> -->
 		<div class="collection__head__text">
 			<ul class="bredcrumbs">
 				<li class="breadcrumb-item"><a href="/">Главная</a></li>
@@ -131,6 +145,7 @@
 		{% for i in range(4, data.numberOfRooms) -%}
 		<!-- collection__item -->
 		<div class="collection__item">
+			<div class="collection__item__sample">Есть образец</div>
 			<div class="collection__item__img" style="background-image: url(img/item-2.jpg);"></div>
 			<div class="collection__item__text">
 				<div class="collection__item__code">Код: 270958</div>
@@ -198,7 +213,11 @@
 					</div>
 					<div class="collection__item__price">976 ₽</div>
 				</div>
-				<button class="collection__item__btn">В корзину</button>
+				<div class="collection__item__incart">
+					<img src="img/check.svg" alt="">
+					<div class="collection__item__incart__title">В корзине</div>
+				</div>
+				
 			</div>
 		</div>
 		<!--END collection__item -->

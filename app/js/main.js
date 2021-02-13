@@ -5,6 +5,18 @@ $(document).ready(function(){
 		navText: ["<img src=\"img/arrow-left.svg\">","<img src=\"img/arrow-right.svg\" >"],
 	});
 
+	$('.collection__head__slider').owlCarousel({
+		items: 1,
+		nav: true,
+		navText: ["<img src=\"img/arrow-left-white.svg\">","<img src=\"img/arrow-right-white.svg\" >"],
+	});
+
+	$('.owl-item').each(function(){
+		var url = $(this).find('.collection__head__slider__item').attr('href');
+		var index = $(this).index();
+		$('.owl-dot').css('background-image','url('+url+')');
+	});
+
 	$('.category__filter__item').each(function(i, el){
 		console.log(el);
 		$(el).find('.category__filter__item__showall').click(function(){
