@@ -52,8 +52,10 @@
 .produt__head__pricecount {
   margin-top: 20px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
 }
 .produt__head__price {
@@ -64,8 +66,10 @@
 }
 .produt__head__count {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
 }
 .produt__head__count input {
@@ -102,8 +106,10 @@
   font-weight: 600;
   text-transform: uppercase;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   padding-left: 0;
 }
@@ -123,10 +129,13 @@
 }
 .produt__haracter__item {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 .produt__haracter__item__name {
@@ -137,6 +146,7 @@
   height: 1px;
   background-color: #e1e1e1;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
           flex-grow: 1;
   margin: 0 30px;
 }

@@ -13,10 +13,13 @@
   background-color: #fff !important;
   border-radius: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
           justify-content: center;
   border: 10px solid #f3f3f3 !important;
 }
@@ -32,19 +35,25 @@
   background-color: #fff !important;
   border-radius: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
           justify-content: center;
   border: 10px solid #f3f3f3 !important;
 }
 .sec5__slider .owl-dots {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
           justify-content: center;
   position: absolute;
   bottom: 38px;
@@ -119,10 +128,13 @@
 }
 .sec6__head {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
           justify-content: space-between;
 }
 .sec6__title {
@@ -131,6 +143,7 @@
 }
 .sec6__line {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
           flex-grow: 1;
   height: 1px;
   background-color: #e1e1e1;
@@ -138,8 +151,10 @@
 }
 .sec6__all {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   text-decoration: none;
   -webkit-transition: 0.2s;
@@ -174,9 +189,11 @@
 .sec7__item {
   text-decoration: none;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
@@ -218,8 +235,10 @@
 }
 .sec7__item__manufacture {
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center;
   margin-top: 10px;
 }
